@@ -18,6 +18,7 @@ export function isReserved (str: string): boolean {
 /**
  * Define a property.
  */
+// 将传入的值的原型进行重写。
 export function def (obj: Object, key: string, val: any, enumerable?: boolean) {
   Object.defineProperty(obj, key, {
     value: val,
